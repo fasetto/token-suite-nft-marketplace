@@ -1,4 +1,4 @@
-export * from "./GetNTFItems";
+export * from "./GetNFTItems";
 export * from "./GetCategories";
 
 export type QueryVars = {

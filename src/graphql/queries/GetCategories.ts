@@ -13,7 +13,7 @@ export const GET_CATEGORIES = gql`
 export type Category = {
   id: string;
   name: string;
-  weigth: string;
+  weight: string;
 };
 
 export type CategoryData = {

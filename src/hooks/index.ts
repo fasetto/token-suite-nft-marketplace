@@ -1,2 +1,2 @@
-export * from "./useNTFItems";
+export * from "./useNFTItems";
 export * from "./useCategories";

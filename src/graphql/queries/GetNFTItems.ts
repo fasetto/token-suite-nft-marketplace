@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 
-export const GET_NTF_ITEMS = gql`
-  query GetNTFItems($first: Int, $skip: Int) {
+export const GET_NFT_ITEMS = gql`
+  query GetNFTItems($first: Int, $skip: Int) {
     cardEntities(first: $first, skip: $skip) {
       id
       name
@@ -14,16 +14,16 @@ export const GET_NTF_ITEMS = gql`
   }
 `;
 
-export type NTFItem = {
+export type NFTItem = {
   id: string;
   name: string;
-  weigth: string;
+  weight: string;
   image: string;
   category: {
     name: string;
   };
 };
 
-export type NTFItemData = {
-  cardEntities: NTFItem[];
+export type NFTItemData = {
+  cardEntities: NFTItem[];
 };

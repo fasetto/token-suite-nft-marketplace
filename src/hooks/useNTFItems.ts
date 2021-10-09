@@ -5,7 +5,7 @@ export const useNTFItems = (options?: QueryVars) => {
   const { data, loading, error } = useQuery<NTFItemData, QueryVars>(
     GET_NTF_ITEMS,
     {
-      variables: options ?? { first: 20 },
+      variables: options ?? { first: 6, skip: 1 },
     }
   );
 

@@ -5,6 +5,7 @@ export const GET_NTF_ITEMS = gql`
     cardEntities(first: $first, skip: $skip) {
       id
       name
+      image
       weight
       category {
         name
@@ -17,6 +18,7 @@ export type NTFItem = {
   id: string;
   name: string;
   weigth: string;
+  image: string;
   category: {
     name: string;
   };

@@ -5,19 +5,27 @@ class Document extends NextDocument {
     return (
       <Html>
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
-            rel="preload"
-            href="/fonts/inter-var-latin.woff2"
-            as="font"
-            type="font/woff2"
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
             crossOrigin="anonymous"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+          />
+
           <link rel="icon" href="/favicon.ico" />
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
         </Head>
 
-        <body className="font-sans">
+        <body>
           <Main />
           <NextScript />
         </body>

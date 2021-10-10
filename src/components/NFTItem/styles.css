@@ -1,0 +1,76 @@
+.nft-item {
+  display: flex;
+  flex-direction: column;
+
+  .image {
+    position: relative;
+    width: 360px;
+    height: 360px;
+  }
+
+  .wrapper {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .name {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  .category-info {
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    row-gap: 2px;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 25px;
+
+    .category {
+      color: var(--gray-200);
+      text-transform: capitalize;
+    }
+
+    .power, .power-label {
+      text-align: right;
+    }
+
+    .label {
+      color: var(--gray-400);
+    }
+  }
+
+  .price-info {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 20px;
+    margin-top: 15px;
+
+    .eth {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 600;
+      color: var(--yellow);
+    }
+
+    .usd {
+      color: var(--gray-400);
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 25px;
+  }
+}

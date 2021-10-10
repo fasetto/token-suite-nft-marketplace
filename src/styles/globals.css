@@ -18,10 +18,16 @@
 
 html {
   scroll-behavior: smooth;
+
+  --gray-200: #c3c4ca;
+  --gray-400: rgb(195 196 202 / 0.5);
+  --primary-dark: #212121;
+  --yellow: #ebd200;
 }
 
 body {
   background: url("/space-bg.png") no-repeat fixed center;
   background-size: cover;
   font-family: Roboto, sans-serif;
+  color: white;
 }

@@ -1,9 +1,16 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import { Button, NextImage } from "@/components";
 import { formatNumber } from "@/utils";
 import { NFTIcon } from "@/icons";
-import { Skeleton } from "./Skeleton";
+
+const Skeleton = dynamic(
+  () => import("./Skeleton").then(mod => mod.Skeleton) as any,
+  {
+    ssr: false,
+  }
+);
 
 type Props = {
   name: string;
@@ -59,6 +66,6 @@ const NFTItem: NFTItemType = props => {
   );
 };
 
-NFTItem.Skeleton = Skeleton;
+NFTItem.Skeleton = Skeleton as any;
 
 export default NFTItem;
